@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {UIStore} from "../interfaces";
+import {UIStore} from "../utils/interfaces.ts";
 
 const MOTHER_ORGANIZATION = "MOTHER_ORGANIZATION";
 const ORGANIZATION_NAME = "ORGANIZATION_NAME";

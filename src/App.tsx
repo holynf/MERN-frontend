@@ -11,12 +11,15 @@ import createCache from "@emotion/cache";
 import HtmlError from "./pages/html-error.tsx";
 import PrimaryPage from "./hoc/PrimaryPage.tsx";
 import HomePage from "./pages/home.tsx";
+//styles
+import "swiper/css";
+import "swiper/css/pagination";
 
 const theme = createTheme(
     {
         direction: "rtl",
         typography: {
-            fontFamily: ["Vazirmatn", "sans-serif"].join(","),
+            fontFamily: ["Estedad", "sans-serif"].join(","),
         },
         components: {
             MuiCard: {
@@ -26,6 +29,14 @@ const theme = createTheme(
                         padding: 4,
                         boxShadow:
                             "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+                    },
+                },
+            },
+            MuiToolbar: {
+                styleOverrides: {
+                    root: {
+                        paddingRight: "0 !important",
+                        paddingLeft: "0 !important",
                     },
                 },
             },

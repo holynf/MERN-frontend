@@ -12,7 +12,7 @@ const PrimaryLayout = () => {
             <Box position={"relative"}>
                 <Header />
                 {/*<BreadCrumb/>*/}
-                <Container maxWidth='lg' component='main'>
+                <Container maxWidth='lg' disableGutters component='main'>
                     <Outlet />
                 </Container>
                 {/*<Footer/>*/}

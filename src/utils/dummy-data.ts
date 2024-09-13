@@ -1,4 +1,4 @@
-import { BranchesItemsTypes, MenuItemsTypes } from "./interfaces.ts";
+import { BranchesItemsTypes, MenuItemsTypes, secondLandingItemsTypes } from "./interfaces.ts";
 import {
     menuImage1,
     menuImage2,
@@ -7,25 +7,29 @@ import {
     branchesImage1,
     branchesImage2,
 } from "../components/shared/images.ts";
+import PersonIcon from "@mui/icons-material/Person";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import MyLocationIcon from "@mui/icons-material/MyLocation";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
 
 export const menuItems: MenuItemsTypes[] = [
     {
-        image: menuImage1,
-        title: "دسر",
-        key: "dessert",
-        route: "menu/dessert",
-    },
-    {
-        image: menuImage2,
+        image: menuImage3,
         title: "غذای اصلی",
         key: "main-dish",
         route: "menu/main-dish",
     },
     {
-        image: menuImage3,
+        image: menuImage2,
         title: "پیش غذا",
         key: "appetizer",
         route: "menu/appetizer",
+    },
+    {
+        image: menuImage1,
+        title: "دسر",
+        key: "dessert",
+        route: "menu/dessert",
     },
     {
         image: menuImage4,
@@ -71,5 +75,28 @@ export const branchesItems: BranchesItemsTypes[] = [
         key: "tehran-poonak",
         route: "branches/tehran-poonak",
         short_description: "میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶",
+    },
+];
+
+export const secondLandingItems: secondLandingItemsTypes[] = [
+    {
+        id: 1,
+        title: "پرسنلی مجرب و حرفه‌ای",
+        icon: PersonIcon,
+    },
+    {
+        id: 2,
+        title: "کیفیت بالای غذاها",
+        icon: BarChartIcon,
+    },
+    {
+        id: 3,
+        title: "محیطی دلنشین و آرام",
+        icon: MyLocationIcon,
+    },
+    {
+        id: 4,
+        title: "منوی متنوع",
+        icon: MenuBookIcon,
     },
 ];

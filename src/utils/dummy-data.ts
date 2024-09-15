@@ -100,3 +100,18 @@ export const secondLandingItems: secondLandingItemsTypes[] = [
         icon: MenuBookIcon,
     },
 ];
+
+export const footerItems = [
+    {
+        title: "دسترسی آسان",
+        items: [
+            { title: "پرسش‌های متداول", route: "questions" },
+            { title: "قوانین ترخینه", route: "rules" },
+            { title: "حریم خصوصی", route: "privacy" },
+        ],
+    },
+    {
+        title: "شعبه‌های ترخینه",
+        items: branchesItems,
+    },
+];

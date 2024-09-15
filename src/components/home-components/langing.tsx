@@ -13,7 +13,7 @@ const HomeLanding = () => {
     };
 
     return (
-        <Box sx={{ mb: 2 }}>
+        <Box sx={{ my: 1 }}>
             <Swiper modules={[Pagination]} className='mySwiper'>
                 {[...Array(2)].map(() => {
                     return (

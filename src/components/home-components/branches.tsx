@@ -21,7 +21,6 @@ const HomeBranches = () => {
                             <Typography variant='p' component='p' sx={{ fontWeight: "700" }}>
                                 {b.title}
                             </Typography>
-                            <hr />
                             <Typography variant='p' component='p' sx={{ fontWeight: "400" }}>
                                 {b.short_description}
                             </Typography>
